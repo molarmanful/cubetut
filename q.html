@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><link href="https://molarmanful.github.io/TerseUI/bootstrap.min.css" rel="stylesheet"><style>html,body{
+	overflow:hidden;
+}
+g-cube{
+	position:absolute;
+}</style></head><body><g-cube></g-cube><script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="https://molarmanful.github.io/gCube/gcube.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.18.0/URI.min.js"></script><script>$(function(){
+	Object.getOwnPropertyNames(q=URI(location.href).query(true)).map(function(x){
+		$('g-cube')[x](q[x])
+	})
+	$('button').addClass('btn btn-primary btn-xs')
+})</script></body></html>
