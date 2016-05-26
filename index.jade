@@ -57,13 +57,14 @@ html
 								li x = L/R rotation (Clockwise to R face)
 								li y = U/D rotation (Clockwise to U face)
 								li z = F/B rotation (Clockwise to B face)
+							p NOTE: These turns are clockwise when your cube is held with that face at the front.
 							p Other symbols:
-								li [MOVE]2 = 180-degree turn
-								li [MOVE]' = 90-degree counterclockwise turn
+								li [MOVE]2 = 180-degree turn (ex.: R2)
+								li [MOVE]' = 90-degree counterclockwise turn (ex.: U')
 							h3 Piece States
 							ul
 								li Permuted = Piece is in correct position.
-								li Oriented = Piece is in flipped correctly.
+								li Oriented = Piece is flipped correctly.
 							p Solved pieces are both permuted and oriented.
 						#cross.tab-pane.fade
 							h1 Cross
@@ -168,7 +169,7 @@ html
 							p This step solves the LL corners while preserving LL edge orientation and the first 2 layers.
 							ul
 								li All corners solved: Go on to EPLL.
-								li Headlights: Use HEADLIGHTS to solve all of the corners.
+								li "Headlights" (see HEADLIGHTS setup below for clarification): Use HEADLIGHTS to solve all of the corners.
 								li No headlights: Use HEADLIGHTS to get headlights.
 							.row
 								.col-sm-6
