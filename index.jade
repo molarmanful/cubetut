@@ -103,7 +103,10 @@ html
 							ol
 								li Bring the edge into the U face using either SL1 or SL2, depending on where the edge is.
 								li Using U, move the edge into place so that the sticker that is not on the U face matches with its corresponding center.
-								li Do either SL1 or SL2 depending on your case.
+								li
+									ul
+										li If the edge is going into the front-right position, use SL1.
+										li If the edge is going into the back-right position, use SL2.
 							.row
 								.col-sm-6
 									|SL1: R' U' R' U' R' U R U R
@@ -125,6 +128,9 @@ html
 								.col-sm-6
 									|BAR: F R U R' U' F'
 									.ar: iframe(src='q.html?ghighlight=eoll&gscramble=F%20U%20R%20U%27%20R%27%20F%27&galgorithm=F%20R%20U%20R%27%20U%27%20F%27')
+								.col-sm-6
+									|L case positioning
+									.ar: iframe(src='q.html?ghighlight=eoll&gscramble=F%20R%20U%20R%27%20U%27%20F%27')
 						#ocll.tab-pane.fade
 							h1 Orient Corners Last Layer (OCLL)
 							p This step orients the LL corners while preserving LL edge orientation and the first 2 layers.
@@ -138,6 +144,21 @@ html
 								.col-sm-6
 									|SUNE: R U R' U R U2 R'
 									.ar: iframe(src='q.html?ghighlight=oll&gscramble=R%20U2%20R%27%20U%27%20R%20U%27%20R%27&galgorithm=R%20U%20R%27%20U%20R%20U2%20R%27')
+								.col-sm-6
+									.row
+										.col-sm-4
+											|1 oriented
+											.ar: iframe(src='q.html?ghighlight=oll&gscramble=R%20U2%20R%27%20U%27%20R%20U%27%20R%27')
+											.ar: iframe(src='q.html?ghighlight=oll&gscramble=R%20U%20R%27%20U%20R%20U2%20R%27%20U2')
+										.col-sm-4
+											|2 oriented
+											.ar: iframe(src='q.html?ghighlight=oll&gscramble=R%20U2%20R%27%20U%27%20R%20U%20R%27%20U%27%20R%20U%20R%27%20U%27%20R%20U%27%20R%27%20U2')
+											.ar: iframe(src='q.html?ghighlight=oll&gscramble=R%20U%20R%27%20U%27%20R%20U%27%20R%27%20U2%20R%20U%27%20R%27%20U2%20R%20U%20R%27%20U')
+											.ar: iframe(src='q.html?ghighlight=oll&gscramble=R%20U2%20R%20D%20R%27%20U2%20R%20D%27%20R2')
+										.col-sm-4
+											|0 oriented
+											.ar: iframe(src='q.html?ghighlight=oll&gscramble=R%20U2%20R%27%20U%27%20R%20U%20R%27%20U%27%20R%20U%27%20R%27')
+											.ar: iframe(src='q.html?ghighlight=oll&gscramble=R%20U2%20R2%20U%27%20R2%20U%27%20R2%20U2%20R')
 						#cpll.tab-pane.fade
 							h1 Corner Permute Last Layer (CPLL)
 							p This step solves the LL corners while preserving LL edge orientation and the first 2 layers.
