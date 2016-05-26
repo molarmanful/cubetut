@@ -1,5 +1,5 @@
 $('iframe').ready(function(){
-	$('.loader').delay(1000).fadeOut(1000)
+	$('.loader').delay(2000).fadeOut(1000)
 	$('#1').click(function(){
 		$('g-cube').ghighlight('all')
 	})
