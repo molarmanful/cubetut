@@ -15,7 +15,7 @@ html
 		script(src='https://molarmanful.github.io/gCube/gcube.min.js')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.18.0/URI.min.js')
 		script.
-			$(function(){
+			$(window).load(function(){
 				Object.getOwnPropertyNames(q=URI(location.href).query(true)).map(function(x){
 					$('g-cube')[x](q[x])
 				})
