@@ -1,4 +1,5 @@
 $('iframe').load(function(){
+	~navigator.userAgent.indexOf('Firefox')&&cube.hideIntroverts()
 	$('.loader').delay(2000).fadeOut(1000)
 	$('#1').click(function(){
 		$('g-cube').ghighlight('all')

@@ -17,6 +17,7 @@ html
 		script.
 			$(window).load(function(){
 				$('g-cube').delay(500).promise().done(function(){
+					~navigator.userAgent.indexOf('Firefox')&&cube.hideIntroverts()
 					Object.getOwnPropertyNames(q=URI(location.href).query(true)).map(function(x){
 						$('g-cube')[x](q[x])
 					})
