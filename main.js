@@ -1,6 +1,5 @@
-$('html').css('display','none')
 $(window).load(function(){
-	$('html').fadeIn(1000)
+	$('.loader').delay(1000).fadeOut(1000)
 	$('#1').click(function(){
 		$('g-cube').ghighlight('all')
 	})
