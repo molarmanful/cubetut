@@ -1,4 +1,4 @@
-$('iframe').ready(function(){
+$('iframe').load(function(){
 	$('.loader').delay(2000).fadeOut(1000)
 	$('#1').click(function(){
 		$('g-cube').ghighlight('all')
