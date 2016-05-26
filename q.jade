@@ -16,6 +16,7 @@ html
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.18.0/URI.min.js')
 		script.
 			$(window).load(function(){
+				$('g-cube').delay(500)
 				Object.getOwnPropertyNames(q=URI(location.href).query(true)).map(function(x){
 					$('g-cube')[x](q[x])
 				})
